@@ -2,7 +2,7 @@
 
 By replacing DECA, which gives the physical conditions of DiffusionRig's face, with EMOCA, more realistic facial expression conversion is possible.  
 
-Shotaro Ishiguro
+*Shotaro Ishiguro*
 
 ## Setup & Preparation
 ```
