@@ -111,7 +111,7 @@ python scripts/inference.py --source jisaku_training/Hitoshi_aligned/ \
 
 ## 3D face shape acquisition using EMOCA
 
-By executing `EMOCA_main/gdl_apps/EMOCA/demos/test_emoca_on_images.py`, you can obtain a 3D face model, latent code, rendering results, etc. from a 2D face image.
+By executing `gdl_apps/EMOCA/demos/test_emoca_on_images.py`, you can obtain a 3D face model, latent code, rendering results, etc. from a 2D face image.
 
 ```
 python demos/test_emoca_on_images.py --input_folder demos/test_images \
