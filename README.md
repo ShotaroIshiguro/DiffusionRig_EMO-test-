@@ -198,3 +198,7 @@ https://github.com/NVlabs/ffhq-dataset
 }
 ```
 
+### リモートリポジトリの使い方
+
+- githubからSSHキーを取得
+
