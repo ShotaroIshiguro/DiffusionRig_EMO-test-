@@ -198,7 +198,22 @@ https://github.com/NVlabs/ffhq-dataset
 }
 ```
 
-### リモートリポジトリの使い方
+### How to use git
 
 - githubからSSHキーを取得
+    git@github.com:ShotaroIshiguro/DiffusionRig_EMO-test-.git
+- `git init`で追加したいファイルがあるローカルディレクトリにて受け入れ準備
+- `git remote add origin SSH_KEY`
+- `git status`で現状況確認(masterブランチにいたら`git branch -M main`でmainブランチに移動)
+- `git fetch`でリモートから最新情報を取得
+- `git pull origin main`でローカルのmainブランチに反映
+- `git add ADD_FILE` or `git add ADD_FILE/`でステージング領域に追加
+- `git status`でステージングを確認
+- `git commit -m "コメント追加"`でコミット
+- `git push origin main`でプッシュ
+
+
+
+
+
 
