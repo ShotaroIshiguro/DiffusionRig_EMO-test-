@@ -25,6 +25,14 @@ conda install pytorch3d -c pytorch3d
 ## Data Preparation
 We use FFHQ and AffectNet to train the first stage and a personal photo album to train the second stage. Before training, you need to extract, with DECA or EMOCA, the physical buffers for those images.
 
+### Dataset for creating 3D shape
+You need to download and unzipu a few assets to create 3D shapes.
+
+```
+cd gdl_apps/EMOCA/demos
+bash download_assets.sh
+```
+
 ### Dataset for Stage1
 Before training, pre-extract 3D facial features from facial images included in FFHQ and AffectNet.
 ```
