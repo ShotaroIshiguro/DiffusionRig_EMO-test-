@@ -25,8 +25,31 @@ conda install pytorch3d -c pytorch3d
 ## Data Preparation
 We use FFHQ and AffectNet to train the first stage and a personal photo album to train the second stage. Before training, you need to extract, with DECA or EMOCA, the physical buffers for those images.
 
-### Dataset for creating 3D shape
-You need to download and unzipu a few assets to create 3D shapes.
+### DECA Setup
+Before doing data preparation for training, please first download the source files and checkpoints of DECA to set it up (you will need to create an account to download FLAME resources):
+
+1. `deca_model.tar`:Visit [this page](https://github.com/yfeng95/DECA) to download the pretrained DECA model.
+2. `generic_model.pkl`: Visit [this page](https://flame.is.tue.mpg.de/download.php) to download `FLAME 2020` and extract `generic_model.pkl`.
+3. `FLAME_texture.npz`: Visit [this same page](https://flame.is.tue.mpg.de/login.php) to download the `FLAME texture space` and extract `FLAME_texture.npz`.
+4. Download the other files listed below from [DECA's Data Page](https://github.com/yfeng95/DECA/tree/master/data) and put them also in the `data/` folder:
+
+```
+data/
+  deca_model.tar
+  generic_model.pkl
+  FLAME_texture.npz
+  fixed_displacement_256.npy
+  head_template.obj
+  landmark_embedding.npy
+  mean_texture.jpg
+  texture_data_256.npy
+  uv_face_eye_mask.png
+  uv_face_mask.png
+```
+
+### EMOCA Setup
+You need to download and unzipu a few assets to create 3D shapes.  
+assets directory will be created.
 
 ```
 cd gdl_apps/EMOCA/demos
