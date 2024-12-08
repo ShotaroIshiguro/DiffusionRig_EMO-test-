@@ -4,6 +4,8 @@ By replacing DECA, which gives the physical conditions of DiffusionRig's face, w
 
 *Shotaro Ishiguro*
 
+![Image 1](https://github.com/ShotaroIshiguro/DiffusionRig_EMO-test-/blob/main/architecture.png)
+
 ## Setup & Preparation
 ```
 conda env create -n DRE python=3.8 --file environment_DRE.yml
