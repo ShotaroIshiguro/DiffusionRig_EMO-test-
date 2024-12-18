@@ -128,6 +128,7 @@ python scripts/train.py --latent_dim 64 --encoder_type resnet18 \
 Three elements can be edited based on the physical buffer: Exp, Pose, and Light
 
 - Select the features of the target image (head orientation, facial expression, lighting) and transfer only those features to the source image.
+- Source images should pick from the personal album used in stage2.
 - Multiple images can be specified as source images by specifying the directory in `--source`.
 - It is possible to specify whether the physical buffer of the target image and source image is obtained from DECA or EMOCA.
 
