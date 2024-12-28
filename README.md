@@ -131,6 +131,7 @@ Three elements can be edited based on the physical buffer: Exp, Pose, and Light
 - Source images should pick from the personal album used in stage2.
 - Multiple images can be specified as source images by specifying the directory in `--source`.
 - It is possible to specify whether the physical buffer of the target image and source image is obtained from DECA or EMOCA.
+- If you want to use the model trained by the Global encoder with resnet18 version, you must change the encoder_type in `utils/script_util.py/def model_and_diffusion_defaults()`
 
 ```
 python scripts/inference.py --source jisaku_training/Hitoshi_aligned/ \
