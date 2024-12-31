@@ -13,6 +13,11 @@ conda activate DRE
 cd DiffusionRig_main
 pip install -e .
 ```
+If you encount the error with omegaconf, try these prompts in `DRE`.
+```
+pip install "pip<24.1"
+pip install omegaconf==2.0.5 hydra-core==1.0.7
+```
 Cython may not be installed correctly, so install it separately.：
 ```
 pip install Cython==0.29.14
