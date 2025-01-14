@@ -62,7 +62,8 @@ bash download_assets.sh
 ```
 
 ### Dataset for Stage1
-Before training, pre-extract 3D facial features from facial images included in FFHQ and AffectNet.
+Before training, pre-extract 3D facial features from facial images included in FFHQ and AffectNet.　　
+The total iteration displayed in the tqdm bar is the number of target images divided by the batch size (default is 8 images).
 ```
 cd DiffusionRig_main
 # FFHQ(DECA)
@@ -73,11 +74,6 @@ python scripts/create_data.py --data_dir FFHQ/FFHQ_images \
 python scripts/create_data.py --data_dir FFHQ/FFHQ_images \
     --output_dir ffhq256_emoca.lmdb --image_size 256 --use_meanshape False \
     --use_model EMOCA
-
-# FFHQ+AffectNet(DECA)
-
-# FFHQ+AffectNet(EMOCA)
-
 ```
 
 ### Dataset for Stage2
@@ -137,6 +133,7 @@ Three elements can be edited based on the physical buffer: Exp, Pose, and Light
 - Multiple images can be specified as source images by specifying the directory in `--source`.
 - It is possible to specify whether the physical buffer of the target image and source image is obtained from DECA or EMOCA.
 - If you want to use the model trained by the Global encoder with resnet18 version, you must change the encoder_type in `utils/script_util.py/def model_and_diffusion_defaults()`
+- The code to select resnet18 or resnet50 at the time of inference has not been implemented. Please open `utils/scripts_util.py` and select the variable on lines 56 and 57 according to the resnet to be used.
 
 ```
 python scripts/inference.py --source jisaku_training/Hitoshi_aligned/ \
